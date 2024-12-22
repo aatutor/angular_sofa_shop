@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component } from "@angular/core";
+import {FormsModule} from '@angular/forms';
+import { SofaListComponent } from "./sofa-list";
+     
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: "my-app",
+    standalone: true,
+    imports: [FormsModule, SofaListComponent],
+    templateUrl: `./app.component.html`,
+		styleUrls: [ `./app.component.css` ]
 })
-export class AppComponent {
-  title = 'demo';
+export class AppComponent { 
+    name= 'на диване';
+		search = 'диван';
 }
