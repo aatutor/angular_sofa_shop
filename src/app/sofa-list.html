@@ -2,6 +2,11 @@
 <p>Ищем {{target}}...</p>
 <div>
 	@for(sofa of list; track sofa) {
-		<li>{{sofa.name}} ({{sofa.price}})</li>
+		<div class="sofa-card">
+			<a href="card?name={{sofa.name}}">
+				<img src="imgs/{{sofa.img}}" alt="картинка дивана">
+			</a>
+			<p>{{sofa.name}} ({{sofa.price}})</p>
+		</div>
 	}
 </div>

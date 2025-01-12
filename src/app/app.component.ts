@@ -1,15 +1,10 @@
-import { Component } from "@angular/core";
-import {FormsModule} from '@angular/forms';
-import { SofaListComponent } from "./sofa-list";
-     
+import { Component} from "@angular/core";
+import { RouterOutlet} from "@angular/router";
+ 
 @Component({
-    selector: "my-app",
-    standalone: true,
-    imports: [FormsModule, SofaListComponent],
-    templateUrl: `./app.component.html`,
-		styleUrls: [ `./app.component.css` ]
+	selector: "my-app",
+	standalone: true,
+	imports: [RouterOutlet],
+	template: `<div><router-outlet></router-outlet></div>`,
 })
-export class AppComponent { 
-    name= 'на диване';
-		search = 'диван';
-}
+export class AppComponent {}

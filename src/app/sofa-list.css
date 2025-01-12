@@ -1,3 +1,21 @@
 :host{
-	border: 2px solid #fff;
+	/* border: 2px solid #ff8349; */
+}
+
+div {
+	border: 1px solid #ffbf49;
+	border-radius: 5px;
+}
+.sofa-card {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	padding: 10px;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+}
+.sofa-card img {
+	width: 150px;
+	height: 150px;
 }

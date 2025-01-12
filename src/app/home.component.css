@@ -1,0 +1,20 @@
+.search {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+div {
+	font-size: 20px;
+	margin: 0px 20px;
+}
+p {
+	margin: 0px;
+}
+.home{
+	display: flex;
+	/* justify-content: center; */
+}
+h1 {
+	margin: 10px auto;
+}

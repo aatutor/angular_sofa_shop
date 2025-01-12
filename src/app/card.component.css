@@ -1,0 +1,11 @@
+.sofa {
+	border: 1px solid #e4ff49;
+	border-radius: 5px;
+	padding: 20px;
+}
+.sofa>img {
+	height: 150px;
+}
+.sofa>p {
+	margin: 0px;
+}

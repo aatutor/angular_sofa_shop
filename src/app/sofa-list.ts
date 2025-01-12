@@ -1,5 +1,6 @@
 import { Input, Component } from "@angular/core";
 // import {FormsModule} from '@angular/forms';
+import { DataService } from './data.service';
      
 @Component({
     selector: "list-products",
@@ -8,10 +9,21 @@ import { Input, Component } from "@angular/core";
 		styleUrls: [ `./sofa-list.css` ]
 })
 export class SofaListComponent {
-		@Input() target = '';
-		list = [
-			{ name: 'Кожанный', price: 1000, color: 'brown' },
-			{ name: 'Мягкий', price: 500, color: 'gray' },
-		];
 		basket = [];
+		list: any[] = [];
+		
+		constructor(private dataService: DataService) {}
+
+		ngOnInit() {
+			this.dataService.getData().subscribe((response) => {
+				this.list = response;
+			});
+		}
+
+		@Input()
+		set target(select: string) {
+			this.dataService.getFilter(select).subscribe((response) => {
+				this.list = response;
+			});
+		}
 }

@@ -1,6 +1,9 @@
-<div>
+<div class="home">
 	<h1>Магазин {{name}}</h1>
+	<h1><a href="basket">Корзина</a></h1>
+</div>
+<div class="search">
 	<input type="text" [(ngModel)]="search" />
+	<br>
 	<list-products [target]="search"></list-products>
 </div>
-<div><h1>Корзина</h1></div>

@@ -24,9 +24,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src"
               }
             ],
-            "styles": [],
+            "styles": [
+							"src/styles.css"
+						],
             "scripts": []
           },
           "configurations": {
@@ -80,9 +86,12 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+							"src/imgs"
             ],
-            "styles": [],
+            "styles": [
+							"src/styles.css"
+						],
             "scripts": []
           }
         }
